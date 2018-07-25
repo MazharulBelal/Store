@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ManuBarTable: UITableViewController {
+class ManuBarTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var UserImagesView: UIImageView!
     var ManuName = ["Home", "Home 1", "Home 2", "Home 3"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,12 @@ class ManuBarTable: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+        
+  
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,19 +35,19 @@ class ManuBarTable: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return ManuName.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! UITableViewCell
 
         cell.textLabel?.text = ManuName[indexPath.row]
 
