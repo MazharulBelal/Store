@@ -1,43 +1,42 @@
 //
-//  Home.swift
+//  ManuBarTable.swift
 //  Store
 //
-//  Created by Mazharul Belal on 16/7/18.
+//  Created by Mazharul Belal on 25/7/18.
 //  Copyright © 2018 Mazharul Belal. All rights reserved.
 //
 
 import UIKit
 
-class Home: UITableViewController {
+class ManuBarTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var UserImagesView: UIImageView!
     
-    @IBOutlet weak var SideManuBar: UIBarButtonItem!
-    var name = ["Tops","Bottoms","Accessories","Bags"]
-    var ProductImages = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
-    var ProductQuantity = ["98","101","23","14"]
-    
-    
-    
+    var ManuName = ["Home", "Home 1", "Home 2", "Home 3"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-         
-       SideManuBar.target = revealViewController()
-        SideManuBar.action = #selector(SWRevealViewController.revealToggle(_:))
-        
         
         
         
      
+        self.UserImagesView.image =  UIImage(named:"UserImg")
+        self.UserImagesView.layer.cornerRadius = 43
+        self.UserImagesView.clipsToBounds = true
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+        
+  
+        
+        
     }
-    
-    
-   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -46,32 +45,25 @@ class Home: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return name.count
+        return ManuName.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! HomeCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! UITableViewCell
 
-        // Configure the cell...
-        
-        //cell.textLabel?.text = name[indexPath.row]
-        cell.NameLabel1.text! = name[indexPath.row]
-        cell.ProductImageView.image = ProductImages[indexPath.row]
-        cell.ProductQuantityLabel.text! = ProductQuantity[indexPath.row]
-        
-        
+        cell.textLabel?.text = ManuName[indexPath.row]
 
         return cell
     }
- 
+    
 
     /*
     // Override to support conditional editing of the table view.

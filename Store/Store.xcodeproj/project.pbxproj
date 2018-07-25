@@ -15,6 +15,8 @@
 		1D58A87B20FC32B60066871F /* StoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A87A20FC32B60066871F /* StoreUITests.swift */; };
 		1D58A88920FC330F0066871F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A88820FC330F0066871F /* Home.swift */; };
 		1D58A88B20FC35600066871F /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A88A20FC35600066871F /* HomeCell.swift */; };
+		1DECBA422107FDE400802706 /* ManuBarTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DECBA412107FDE400802706 /* ManuBarTable.swift */; };
+		1DECBA462108044000802706 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DECBA442108044000802706 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		1D58A87C20FC32B60066871F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D58A88820FC330F0066871F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1D58A88A20FC35600066871F /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		1DECBA412107FDE400802706 /* ManuBarTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuBarTable.swift; sourceTree = "<group>"; };
+		1DECBA432108043F00802706 /* Store-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Store-Bridging-Header.h"; sourceTree = "<group>"; };
+		1DECBA442108044000802706 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		1DECBA452108044000802706 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,15 @@
 			children = (
 				1D58A85A20FC32B50066871F /* AppDelegate.swift */,
 				1D58A88A20FC35600066871F /* HomeCell.swift */,
+				1DECBA452108044000802706 /* SWRevealViewController.h */,
+				1DECBA442108044000802706 /* SWRevealViewController.m */,
+				1DECBA412107FDE400802706 /* ManuBarTable.swift */,
 				1D58A85E20FC32B50066871F /* Main.storyboard */,
 				1D58A88820FC330F0066871F /* Home.swift */,
 				1D58A86120FC32B60066871F /* Assets.xcassets */,
 				1D58A86320FC32B60066871F /* LaunchScreen.storyboard */,
 				1D58A86620FC32B60066871F /* Info.plist */,
+				1DECBA432108043F00802706 /* Store-Bridging-Header.h */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 				TargetAttributes = {
 					1D58A85620FC32B50066871F = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					1D58A86A20FC32B60066871F = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -261,7 +272,9 @@
 			files = (
 				1D58A88920FC330F0066871F /* Home.swift in Sources */,
 				1D58A88B20FC35600066871F /* HomeCell.swift in Sources */,
+				1DECBA462108044000802706 /* SWRevealViewController.m in Sources */,
 				1D58A85B20FC32B50066871F /* AppDelegate.swift in Sources */,
+				1DECBA422107FDE400802706 /* ManuBarTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A94WMW47U9;
 				INFOPLIST_FILE = Store/Info.plist;
@@ -443,6 +457,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Mazharul.Store;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Store/Store-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A94WMW47U9;
 				INFOPLIST_FILE = Store/Info.plist;
@@ -461,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Mazharul.Store;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Store/Store-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
