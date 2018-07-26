@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Store/ProductHomePage.swift"
+            timestampString = "554321706.872478"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ProductHomePage"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Store.ProductHomePage.productTitle.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Programming%20/iOS%20Project/Store/Store/ProductHomePage.swift"
+                  timestampString = "554317350.709842"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Store.ProductHomePage.productTitle.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Programming%20/iOS%20Project/Store/Store/ProductHomePage.swift"
+                  timestampString = "554317350.714168"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Store.ProductHomePage.init(collectionViewLayout: __ObjC.UICollectionViewLayout) -&gt; Store.ProductHomePage"
+                  moduleName = "Store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Programming%20/iOS%20Project/Store/Store/ProductHomePage.swift"
+                  timestampString = "554317350.716947"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Store.ProductHomePage.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Store.ProductHomePage"
+                  moduleName = "Store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Programming%20/iOS%20Project/Store/Store/ProductHomePage.swift"
+                  timestampString = "554317350.7189569"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Store.ProductHomePage.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Store.ProductHomePage&gt;"
+                  moduleName = "Store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Programming%20/iOS%20Project/Store/Store/ProductHomePage.swift"
+                  timestampString = "554317350.720572"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

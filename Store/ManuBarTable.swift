@@ -10,10 +10,23 @@ import UIKit
 
 class ManuBarTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
     @IBOutlet weak var UserImagesView: UIImageView!
-    var ManuName = ["Home", "Home 1", "Home 2", "Home 3"]
+    @IBOutlet weak var TableView: UITableView!
+    
+    var ManuName = ["Sale","Tops","Bottoms","Outwear","Clothing","Dresses","Shoes","Accessories","Sale","Tops","Bottoms","Outwear","Clothing","Dresses","Shoes","Accessories"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+       
+     
+        self.UserImagesView.image =  UIImage(named:"UserImg")
+        self.UserImagesView.layer.cornerRadius = 43
+        self.UserImagesView.clipsToBounds = true
+        self.TableView.backgroundColor = UIColor(red: 160/255, green: 160/255, blue: 160/255, alpha: 1)
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -47,14 +60,20 @@ class ManuBarTable: UIViewController, UITableViewDelegate, UITableViewDataSource
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CatagotyTableCell
 
-        cell.textLabel?.text = ManuName[indexPath.row]
+        cell.CatagoryNameLabel.text! = ManuName[indexPath.row]
+        cell.backgroundColor = UIColor(red: 160/255, green: 160/255, blue: 160/255, alpha: 1)
+        
+
 
         return cell
     }
     
-
+    
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

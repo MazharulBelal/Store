@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1B16452108F2DE009BD51A /* CatagotyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1B16442108F2DE009BD51A /* CatagotyTableCell.swift */; };
 		1D58A85B20FC32B50066871F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A85A20FC32B50066871F /* AppDelegate.swift */; };
 		1D58A86020FC32B50066871F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D58A85E20FC32B50066871F /* Main.storyboard */; };
 		1D58A86220FC32B60066871F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D58A86120FC32B60066871F /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 		1D58A87B20FC32B60066871F /* StoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A87A20FC32B60066871F /* StoreUITests.swift */; };
 		1D58A88920FC330F0066871F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A88820FC330F0066871F /* Home.swift */; };
 		1D58A88B20FC35600066871F /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A88A20FC35600066871F /* HomeCell.swift */; };
+		1D8BE3DB210A265A00438FF2 /* ProductHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8BE3DA210A265A00438FF2 /* ProductHomePage.swift */; };
+		1D8BE3DD210A33BE00438FF2 /* ProductHomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8BE3DC210A33BE00438FF2 /* ProductHomePageCell.swift */; };
 		1DECBA422107FDE400802706 /* ManuBarTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DECBA412107FDE400802706 /* ManuBarTable.swift */; };
 		1DECBA462108044000802706 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DECBA442108044000802706 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D1B16442108F2DE009BD51A /* CatagotyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagotyTableCell.swift; sourceTree = "<group>"; };
 		1D58A85720FC32B50066871F /* Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Store.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D58A85A20FC32B50066871F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D58A85F20FC32B50066871F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		1D58A87C20FC32B60066871F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D58A88820FC330F0066871F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1D58A88A20FC35600066871F /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		1D8BE3DA210A265A00438FF2 /* ProductHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHomePage.swift; sourceTree = "<group>"; };
+		1D8BE3DC210A33BE00438FF2 /* ProductHomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHomePageCell.swift; sourceTree = "<group>"; };
 		1DECBA412107FDE400802706 /* ManuBarTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuBarTable.swift; sourceTree = "<group>"; };
 		1DECBA432108043F00802706 /* Store-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Store-Bridging-Header.h"; sourceTree = "<group>"; };
 		1DECBA442108044000802706 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -109,8 +115,11 @@
 				1D58A88A20FC35600066871F /* HomeCell.swift */,
 				1DECBA452108044000802706 /* SWRevealViewController.h */,
 				1DECBA442108044000802706 /* SWRevealViewController.m */,
+				1D1B16442108F2DE009BD51A /* CatagotyTableCell.swift */,
 				1DECBA412107FDE400802706 /* ManuBarTable.swift */,
 				1D58A85E20FC32B50066871F /* Main.storyboard */,
+				1D8BE3DC210A33BE00438FF2 /* ProductHomePageCell.swift */,
+				1D8BE3DA210A265A00438FF2 /* ProductHomePage.swift */,
 				1D58A88820FC330F0066871F /* Home.swift */,
 				1D58A86120FC32B60066871F /* Assets.xcassets */,
 				1D58A86320FC32B60066871F /* LaunchScreen.storyboard */,
@@ -270,7 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8BE3DB210A265A00438FF2 /* ProductHomePage.swift in Sources */,
+				1D1B16452108F2DE009BD51A /* CatagotyTableCell.swift in Sources */,
 				1D58A88920FC330F0066871F /* Home.swift in Sources */,
+				1D8BE3DD210A33BE00438FF2 /* ProductHomePageCell.swift in Sources */,
 				1D58A88B20FC35600066871F /* HomeCell.swift in Sources */,
 				1DECBA462108044000802706 /* SWRevealViewController.m in Sources */,
 				1D58A85B20FC32B50066871F /* AppDelegate.swift in Sources */,
