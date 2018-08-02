@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Store/ProductHomePage.swift"
-            timestampString = "554321706.872478"
+            timestampString = "554941522.5847991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "ProductHomePage"
             landmarkType = "3">
             <Locations>

@@ -71,6 +71,16 @@ class Home: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        var output = name[indexPath.row]
+        print(output)
+        
+        
+    }
+    
+
  
 
     /*

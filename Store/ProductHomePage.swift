@@ -11,7 +11,11 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class ProductHomePage: UICollectionViewController {
-
+    
+    var output = String()
+    
+    
+     var productTitle1 = ["Black Lace Up Rubber Sole Low Top Sneakers","Apricot Faux Suede Lace Up Rubber Sole Low","Pink Satin Fabric Rubber Sole Low Top Sneakers","Pink Velvet Lace Up Rubber Sole Sneakers"]
     var productTitle = ["Black Lace Up Rubber Sole Low Top Sneakers","Apricot Faux Suede Lace Up Rubber Sole Low","Pink Satin Fabric Rubber Sole Low Top Sneakers","Pink Velvet Lace Up Rubber Sole Sneakers"]
     
     var ProductPrice = ["$38","$37","$35","$39"]
@@ -66,6 +70,14 @@ class ProductHomePage: UICollectionViewController {
     
         return cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       var output = productTitle[indexPath.row]
+        print(output)
+    }
+    
+  
+
 
     // MARK: UICollectionViewDelegate
 
